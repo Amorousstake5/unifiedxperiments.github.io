@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android App Developer - John Doe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #1a73e8;
+        }
+
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #e8f0fe;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .portfolio-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #1557b0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe - Android App Developer</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero section">
+        <h1>Welcome to My Android Development Portfolio</h1>
+        <p>Building innovative and user-friendly Android applications tailored to your needs.</p>
+        <a href="#contact" class="contact-form button">Get in Touch</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm John Doe, a passionate Android app developer with over 5 years of experience in creating high-quality, performance-driven mobile applications. I specialize in Kotlin, Java, and modern Android frameworks to deliver apps that delight users.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="App 1">
+                <h3>Fitness Tracker App</h3>
+                <p>A feature-rich fitness app with real-time tracking and analytics.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="App 2">
+                <h3>E-Commerce App</h3>
+                <p>A seamless shopping experience with secure payment integration.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250" alt="App 3">
+                <h3>Task Manager App</h3>
+                <p>A productivity app to organize tasks and boost efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <ul style="list-style: none; max-width: 600px; margin: 2rem auto; text-align: left;">
+            <li>Custom Android App Development</li>
+            <li>UI/UX Design for Mobile Apps</li>
+            <li>App Optimization and Maintenance</li>
+            <li>API Integration and Backend Development</li>
+            <li>App Store Deployment and Support</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind? Let's discuss how I can help bring your ideas to life!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
