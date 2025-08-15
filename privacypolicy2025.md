@@ -42,6 +42,6 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 ## 8. Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at mailto://unifiedxperiments@outlook.com
+If you have any questions about this Privacy Policy, please contact us at unifiedxperiments@outlook.com
 
 This Privacy Policy is provided "as is" without any warranties. Thank you for trusting Math Challenge!
